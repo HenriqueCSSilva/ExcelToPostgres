@@ -1,7 +1,8 @@
 import pandas as pd
 import psycopg2
 ##!! IMPORTANTE - - CORRIGJIR CAMPO NA TABELA Q ESTA COM  " ( ".
-conn = psycopg2.connect(f"host=localhost dbname=seuBanco port=5433 user=SeuUsuario  password=Senha")
+
+#con = psycopg2.connect(database='cap',host='10.71.16.108', user='postgres', password='GESTAOPROJETOS')
 cur = conn.cursor()
 limpar = 'truncate tb_bi'  #comando para Limpar a tabela
 cur.execute(limpar)
